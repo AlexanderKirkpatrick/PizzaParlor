@@ -80,11 +80,12 @@ Pizza.prototype.pizzaSize = function (size) {
   
 $(document).ready(function() {
   $("button#take-out").click(function() {
+    $("delivery-place").hide();
     $("#pizza-picker").show();
   })
 
   $("button#delivery").click(function() {
-    this.cost += 5;
+    $("#delivery-place").show();
     $("#pizza-picker").show();
   })
 
