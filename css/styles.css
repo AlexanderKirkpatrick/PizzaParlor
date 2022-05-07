@@ -8,7 +8,13 @@
   position: relative;
 }
 
+#delivery-place {
+  margin-top: 25px;
+  display: none;
+}
+
 #pizza-picker {
+  margin-top: 25px;
   display: none;
 }
 
