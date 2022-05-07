@@ -79,6 +79,15 @@ Pizza.prototype.pizzaSize = function (size) {
     
   
 $(document).ready(function() {
+  $("button#take-out").click(function() {
+    $("#pizza-picker").show();
+  })
+
+  $("button#delivery").click(function() {
+    this.cost += 5;
+    $("#pizza-picker").show();
+  })
+
   $("form#pizza-picker").submit(function(event) {
     event.preventDefault();
 
