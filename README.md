@@ -22,3 +22,9 @@
 * Code: pizzaSauce ("alfredo")
 * Expected Output: 2
 
+* Describe: pizzaMeat 
+
+* Test One: It should return the meat type and cost
+* Code: pizzaSauce ("chicken")
+* Expected Output: 3
+
