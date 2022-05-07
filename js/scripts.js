@@ -48,6 +48,20 @@ Pizza.prototype.pizzaSize = function (size) {
       this.cost += 3;
     }
   }
+
+  Pizza.prototype.pizzaMeat = function(meats) {
+    let pizzaMeat = meats;
+    const meatPepperoni = "Pepperoni";
+    const meatChicken = "Chicken";
+    const meatSausage = "Sausage";
+    if (meatPepperoni.includes(pizzaMeat)) {
+      this.cost += 1;
+    } else if (meatChicken.includes(pizzaMeat)) {
+      this.cost += 2;
+    } else if (meatSausage.includes(pizzaMeat)) {
+      this.cost += 1;
+    }
+  }
     
   
 
@@ -70,7 +84,7 @@ $(document).ready(function() {
     newPizza.pizzaSize(sizeOptions);
     newPizza.pizzaCrust(crustOptions);
     newPizza.pizzaSauce(sauceOptions);
-    //newPizza.pizzaMeat(meatOptions);
+    newPizza.pizzaMeat(meatOptions);
     //newPizza.pizzaToppings(toppingsOptions);
 
     const totalPrice = newPizza.cost;
