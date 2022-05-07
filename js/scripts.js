@@ -59,17 +59,25 @@ Pizza.prototype.pizzaSize = function (size) {
     } else if (meatChicken.includes(pizzaMeat)) {
       this.cost += 2;
     } else if (meatSausage.includes(pizzaMeat)) {
+      this.cost += 3;
+    }
+  }
+
+  Pizza.prototype.pizzaToppings = function(toppings) {
+    let pizzaToppings = toppings;
+    const toppingJalapenos = "Jalapenos";
+    const toppingPineapples = "Pineapples";
+    const toppingOlives = "Olives";
+    if (toppingJalapenos.includes(pizzaToppings)) {
       this.cost += 1;
+    } else if (toppingPineapples.includes(pizzaToppings)) {
+      this.cost += 2;
+    } else if (toppingOlives.includes(pizzaToppings)) {
+      this.cost += 3;
     }
   }
     
   
-
-
-
-
-
-
 $(document).ready(function() {
   $("form#pizza-picker").submit(function(event) {
     event.preventDefault();
@@ -85,7 +93,7 @@ $(document).ready(function() {
     newPizza.pizzaCrust(crustOptions);
     newPizza.pizzaSauce(sauceOptions);
     newPizza.pizzaMeat(meatOptions);
-    //newPizza.pizzaToppings(toppingsOptions);
+    newPizza.pizzaToppings(toppingsOptions);
 
     const totalPrice = newPizza.cost;
     $("#price").show();
