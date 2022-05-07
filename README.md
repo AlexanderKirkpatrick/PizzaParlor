@@ -28,3 +28,9 @@
 * Code: pizzaSauce ("chicken")
 * Expected Output: 3
 
+* Describe: pizzaToppings 
+
+* Test One: It should return the selected topping and cost
+* Code: pizzaSauce ("jalapenos")
+* Expected Output: 1
+
