@@ -26,7 +26,7 @@
 
 * Test One: It should return the meat type and cost
 * Code: pizzaSauce ("chicken")
-* Expected Output: 3
+* Expected Output: 2
 
 * Describe: pizzaToppings 
 
