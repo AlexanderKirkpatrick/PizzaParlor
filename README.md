@@ -12,7 +12,13 @@
 
 * Describe: pizzaCrust 
 
-* Test One: It should return the size and cost of pizza
+* Test One: It should return the crust type and price
 * Code: pizzaCrust ("thin")
+* Expected Output: 2
+
+* Describe: pizzaSauce 
+
+* Test One: It should return the sauce type and cost
+* Code: pizzaSauce ("alfredo")
 * Expected Output: 2
 
