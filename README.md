@@ -8,5 +8,11 @@
 
 * Test One: It should return the size and cost of pizza
 * Code: pizzaSize ("medium")
-* Expected Output: 5
+* Expected Output: 10
+
+* Describe: pizzaCrust 
+
+* Test One: It should return the size and cost of pizza
+* Code: pizzaCrust ("thin")
+* Expected Output: 2
 
