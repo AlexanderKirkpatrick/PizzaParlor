@@ -11,13 +11,27 @@ Pizza.prototype.pizzaSize = function (size) {
   let pizzaSize = size;
   const sizeSmall = "Small";
   const sizeMedium = "Medium";
-  const sizeLarge = "Large"
+  const sizeLarge = "Large";
   if (sizeSmall.includes(pizzaSize)) {
     this.cost += 5;  
       } else if (sizeMedium.includes(pizzaSize)) {
         this.cost += 10;
       } else if (sizeLarge.includes(pizzaSize)) {
         this.cost += 15;
+    }
+  }
+
+  Pizza.prototype.pizzaCrust = function (crust) {
+    let pizzaCrust = crust;
+    const crustThin = "Thin";
+    const crustThick = "Thick";
+    const crustStuffed = "Stuffed";
+    if (crustThin.includes(pizzaCrust)) {
+      this.cost += 2;
+    } else if (crustThick.includes(pizzaCrust)) {
+      this.cost += 3;
+    } else if (crustStuffed.includes(pizzaCrust)) {
+      this.cost += 5;
     }
   }
     
@@ -40,7 +54,7 @@ $(document).ready(function() {
 
     let newPizza = new Pizza(sizeOptions, crustOptions, sauceOptions, meatOptions, toppingsOptions);
     newPizza.pizzaSize(sizeOptions);
-    //newPizza.pizzaCrust(crustOptions);
+    newPizza.pizzaCrust(crustOptions);
     //newPizza.pizzaSauce(sauceOptions);
     //newPizza.pizzaMeat(meatOptions);
     //newPizza.pizzaToppings(toppingsOptions);
